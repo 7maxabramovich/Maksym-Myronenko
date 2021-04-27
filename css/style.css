@@ -10,7 +10,7 @@ a {
 }
 @font-face {
 	font-family: Roboto;
-    src: url('../vendor/Roboto/Roboto-Regular.ttf') format('truetype'); 
+	src: url('../vendor/Roboto/Roboto-Regular.ttf') format('truetype'); 
 }
 .background_wrap {
 	background: url(../img/background.svg);
@@ -22,18 +22,35 @@ a {
 }
 .header {
 	display: flex;
-    justify-content: space-between;
+	justify-content: space-between;
 	padding: 23px 0 23px 15px;
 }
 
 @media (max-width: 1684px) {
 	.wrap {
-		margin-left: 66px;
-		margin-right: 20px;
+		width: 75%;
+		margin: auto;
+		min-width: 1200px;
 	}	
 }
+@media (max-width: 1260px) {
+	.wrap {
+		padding-left: 52px;
+		width: 97%;
+    min-width: auto;
+	}
+}
 
-@media (max-width: 632px) {
+@media (max-width: 375px) {
+	.wrap {
+		margin-left: 66px;
+    margin-right: 20px;
+    width: 80%;
+    padding-left: 0;
+	}
+}
+
+@media (max-width: 563px) {
 	.background_wrap {
 		background: url(../img/background1.svg);
 		margin: 0 0 0 -48px;
@@ -45,25 +62,25 @@ a {
 
 .logo {
 	background-image: url(../img/logo.svg);
-    width: 26px;
-    height: 30px;
+	width: 26px;
+	height: 30px;
 	float: left;
 	padding-right: 10px;
-    background-repeat: no-repeat;
+	background-repeat: no-repeat;
 }
 .logo_text {
 	font-family: 'Roboto';
-    font-weight: bold;
-    font-size: 22px;
+	font-weight: bold;
+	font-size: 22px;
 }
 .logo_text a {
-    display: flex;
+	display: flex;
 }
 .logo_text span {
 	margin: 3px;
 }
 
-@media (max-width: 632px) {
+@media (max-width: 563px) {
 	.logo {
 		padding-right: 7px;
 	}
@@ -96,7 +113,7 @@ a {
 	color: #940B97;
 }
 
-@media (max-width: 632px) {
+@media (max-width: 563px) {
 	.hamburger {
 		background: url(../img/menu.svg);
 		width: 23px;
@@ -114,19 +131,22 @@ a {
 	letter-spacing: 0.1em;
 	color: #F1F1F1;
 	margin-block-start: auto;
-    margin-block-end: auto;
+	margin-block-end: auto;
 }
-@media (max-width: 1684px) {
+
+@media (max-width: 1260px) {
+	.magnificent_title {
+		font-size: 120px;
+	}
+}
+@media (max-width: 850px) {
+	.contact div a {
+		margin-left: 15px;
+	}	
 	.magnificent_title {
 		font-size: 50px;
 		line-height: 50px;
 		margin-left: 2px;
-		text-align: center;
-	}
-}
-@media (max-width: 632px) {
-	.magnificent_title {
-		text-align: left;
 	}
 }
 
@@ -156,28 +176,38 @@ a {
 }
 
 @media (max-width: 1684px) {
-	.content {
-		justify-content: center;
-	}	
 	.maksym {
-		width: 334.47px;
+		width: 27%;
+	}
+	.content_right {
+		width: 72%;
+	}
+}
+@media (max-width: 1260px) {
+	.maksym {
+		font-size: 40px;
+    line-height: 60px;
+		width: 25%;
+	}
+	.content_right {
+		width: 73%;
+	}
+}
+@media (max-width: 850px) {
+	.maksym {
 		font-size: 27px;
 		line-height: 34px;
 		margin-top: -28px;
 		margin-left: 0;
+		width: 334.47px;
 		height: 68px;
 	}
 	.content_right {
-		justify-content: center;
+		width: 100%;
+		margin-top: 10px;
 	}
-}
-
-@media (max-width: 632px) {
 	.content {
 		padding-bottom: 50px;
-	}
-	.content_right {
-		margin-top: 10px;
 	}
 }
 
@@ -228,7 +258,7 @@ a {
 	display: none;
 }
 
-@media (max-width: 632px) {
+@media (max-width: 563px) {
 	.tabs_drop {
 		display: block;
 	}
@@ -269,6 +299,9 @@ a {
 		height: 22px;
 		background: url(../img/arrow.svg);
 		transform: rotate(180deg);
+	}
+	.content_right .tabs_drop div:hover:after {
+		height: 22px;
 	}
 	.tabs_style div {
 		font-size: 22px;
@@ -338,15 +371,53 @@ a {
 }
 
 @media (max-width: 1684px) {
+	.content_right_tabs {
+		width: 18%;
+	}
+	.tabs_content {
+		width: 75%;
+	}
+	.text {
+		width: 88%;
+	}
+}
+@media (max-width: 1260px) {
+	.content_right_tabs {
+		width: 24%;
+	}
+	.tabs_content {
+		width: 65%;
+	}
+}
+
+@media (max-width: 850px) {
+	.content_right_tabs {
+		width: 28%;
+	}
+	.tabs_content {
+		width: 61%;
+	}
+	.text {
+		width: 100%;
+	}
+}
+
+@media (max-width: 375px) {
 	.text {
 		width: 334px;
 	}
 }
 
-@media (max-width: 632px) {
+@media (max-width: 563px) {
 	.tabs_content {
 		margin-left: 2px;
 		margin-top: 28px;
+		width: 100%;
+	}
+}
+@media (max-width: 375px) {
+	.tabs_content {
+		width: 75%;
 	}
 }
 
@@ -363,7 +434,7 @@ a {
 	height: 338px;
 }
 
-@media (max-width: 1684px) {
+@media (max-width: 1260px) {
 	.slider {
 		width: 336px;
 	}
