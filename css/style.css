@@ -447,31 +447,6 @@ a {
     height: 196px;    
   }
 }
-@media (max-width: 563px) {
-  .slider {
-    width: auto;
-  }
-  .slider div {
-    height: auto;
-  }
-  .slider img {
-    width: auto;
-    height: auto;
-    max-width: 100%;
-  }
-}
-@media (max-width: 375px) {
-  .slider {
-    width: 336px;
-  }
-  .slider div {
-    height: 196px;
-  }
-  .slider img {
-    height: 196px;
-    width: 100%;    
-  }
-}
 
 .slick-dots {
   bottom: -40px;
