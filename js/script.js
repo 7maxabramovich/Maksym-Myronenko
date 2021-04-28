@@ -14,6 +14,27 @@ $(document).ready(function() {
     $('#' + $(this).attr('title')).attr('data-display', 'active'); //Show content for current tab
   });	
 
+	slickInit();
+
+  function slickInit() {
+		$('.slider').slick({
+			autoplay: false,
+			speed: 800,
+			autoplaySpeed: 2000,
+			arrows: false,
+			dots: true,
+			adaptiveHeight: true,
+			infinite: true,
+			slidesToShow: 1, 
+			slidesToScroll: 1,
+		});
+	};
+
+	$('.tabs div').click(function () {
+		$('.slider').slick('destroy');
+		slickInit();
+	});
+
   $('.tabs div').click(function () {
     let text = $(this).text();
     $('.tabs_drop input').val(text);
@@ -27,25 +48,15 @@ $(document).ready(function() {
       $tabs_drop.attr('data-active', 'active');
     }
   };
+	
   $('.tabs_drop div').click(dropActive);
   $('.hamburger').click(dropActive);
 
   function drop() {
 	$('.tabs_drop').next('.tabs_active').slideToggle();
   };
+	
   $('.hamburger').click(drop);
   $('.tabs_drop div').click(drop);
-
-  $('.slider').slick({
-    autoplay: false,
-    speed: 800,
-    autoplaySpeed: 2000,
-    arrows: false,
-    dots: true,
-    adaptiveHeight: true,
-    infinite: true,
-    slidesToShow: 1, 
-    slidesToScroll: 1,
-  });
 
 });

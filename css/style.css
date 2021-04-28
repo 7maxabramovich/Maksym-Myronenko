@@ -448,6 +448,34 @@ a {
   }
 }
 
+@media (max-width: 563px) {
+  .slider {
+    width: 100%;
+  }
+  .slider div {
+    height: 100%;
+  }
+  .slider img {
+    height: auto;
+    width: auto;    
+    max-width: 100%;
+    min-height: 100%;    
+  }
+}
+
+@media (max-width: 375px) {
+  .slider {
+    width: 336px;
+  }
+  .slider div {
+    height: 196px;
+  }
+  .slider img {
+    height: 196px;    
+		width: 336px;
+  }
+}
+
 .slick-dots {
   bottom: -40px;
 }
