@@ -40,7 +40,7 @@ a {
     min-width: auto;
   }
 }
-@media (max-width: 563px) {
+@media (max-width: 572px) {
   .background_wrap {
     background: url(../img/background1.svg);
     margin: 0 0 0 -48px;
@@ -78,7 +78,7 @@ a {
   margin: 3px;
 }
 
-@media (max-width: 563px) {
+@media (max-width: 572px) {
   .logo {
     padding-right: 7px;
   }
@@ -111,7 +111,7 @@ a {
   color: #940B97;
 }
 
-@media (max-width: 563px) {
+@media (max-width: 572px) {
   .hamburger {
     background: url(../img/menu.svg);
     width: 23px;
@@ -137,7 +137,7 @@ a {
     font-size: 120px;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 890px) {
   .contact div a {
     margin-left: 15px;
   }  
@@ -178,7 +178,7 @@ a {
     width: 27%;
   }
   .content_right {
-    width: 72%;
+    width: 71%;
   }
 }
 @media (max-width: 1260px) {
@@ -191,7 +191,7 @@ a {
     width: 73%;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 890px) {
   .maksym {
     font-size: 27px;
     line-height: 34px;
@@ -206,6 +206,7 @@ a {
   }
   .content {
     padding-bottom: 50px;
+		margin-right: 8px;
   }
 }
 
@@ -256,7 +257,7 @@ a {
   display: none;
 }
 
-@media (max-width: 563px) {
+@media (max-width: 572px) {
   .tabs_drop {
     display: block;
   }
@@ -378,7 +379,7 @@ a {
     width: 18%;
   }
   .tabs_content {
-    width: 75%;
+    width: 74%;
   }
   .text {
     width: 88%;
@@ -392,7 +393,7 @@ a {
     width: 65%;
   }
 }
-@media (max-width: 850px) {
+@media (max-width: 890px) {
   .content_right_tabs {
     width: 28%;
   }
@@ -403,7 +404,7 @@ a {
     width: 100%;
   }
 }
-@media (max-width: 563px) {
+@media (max-width: 572px) {
   .content_right_tabs {
     width: 100%;
     position: relative;
@@ -448,7 +449,7 @@ a {
   }
 }
 
-@media (max-width: 563px) {
+@media (max-width: 572px) {
   .slider {
     width: 100%;
   }
