@@ -12,28 +12,28 @@ $(document).ready(function() {
     $(this).attr('data-active', 'active'); // Activate this
     $('[title="' + $(this).attr('title') + '"').attr('data-active', 'active');
     $('#' + $(this).attr('title')).attr('data-display', 'active'); //Show content for current tab
-  });	
+  });  
 
-	slickInit();
+  slickInit();
 
   function slickInit() {
-		$('.slider').slick({
-			autoplay: false,
-			speed: 800,
-			autoplaySpeed: 2000,
-			arrows: false,
-			dots: true,
-			adaptiveHeight: true,
-			infinite: true,
-			slidesToShow: 1, 
-			slidesToScroll: 1,
-		});
-	};
+    $('.slider').slick({
+      autoplay: false,
+      speed: 800,
+      autoplaySpeed: 2000,
+      arrows: false,
+      dots: true,
+      adaptiveHeight: true,
+      infinite: true,
+      slidesToShow: 1, 
+      slidesToScroll: 1,
+    });
+  };
 
-	$('.tabs div').click(function () {
-		$('.slider').slick('destroy');
-		slickInit();
-	});
+  $('.tabs div').click(function () {
+    $('.slider').slick('destroy');
+    slickInit();
+  });
 
   $('.tabs div').click(function () {
     let text = $(this).text();
@@ -48,14 +48,14 @@ $(document).ready(function() {
       $tabs_drop.attr('data-active', 'active');
     }
   };
-	
+  
   $('.tabs_drop div').click(dropActive);
   $('.hamburger').click(dropActive);
 
   function drop() {
-	$('.tabs_drop').next('.tabs_active').slideToggle();
+  $('.tabs_drop').next('.tabs_active').slideToggle();
   };
-	
+  
   $('.hamburger').click(drop);
   $('.tabs_drop div').click(drop);
 
