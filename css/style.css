@@ -210,6 +210,12 @@ a {
   }
 }
 
+@media (max-width: 375px) {
+  .content {
+    margin-right: 3px;
+  }
+}
+
 .tabs_style div{
   position: relative;
   width: 203px;
@@ -281,7 +287,7 @@ a {
     width: 100%;
   }
   .content_right .tabs_drop div[data-active="active"]:before {
-    right: -1px;
+    right: 0;
     width: 100%;
     height: 4px;   
   }
@@ -361,6 +367,20 @@ a {
   }
 }
 
+@media (max-width: 375px) {
+  .tabs_drop {
+    margin-right: -2px;
+  }
+  .content_right .tabs_drop div:before,
+  .content_right .tabs_drop div[data-active="active"]:before  {
+    right: 1px;
+    width: calc(100% - 1px);  
+  }
+  .tabs_active {  
+    width: calc(100% + 2px);
+  }
+}
+
 .tabs_content {
   margin-left: 60px;
   margin-top: 15px;
@@ -418,12 +438,13 @@ a {
 @media (max-width: 375px) {
   .tabs_content {
     width: 75%;
+    width: 100%;
   }
   .text {
-    width: 334px;
+    width: 100%;
   }
 }
-
+  
 .slider {
   margin-top: 20px;
   width: 577px;
@@ -467,6 +488,7 @@ a {
 @media (max-width: 375px) {
   .slider {
     width: 336px;
+    width: 100%;    
   }
   .slider div {
     height: 196px;
@@ -480,6 +502,12 @@ a {
 .slick-dots {
   bottom: -40px;
 }
+
+.slick-dots li {
+  width: 14px;
+  margin: 0 14px;
+}
+
 .slick-dots li button:before,
 .slick-dots li.slick-active button:before {
   display: none;
